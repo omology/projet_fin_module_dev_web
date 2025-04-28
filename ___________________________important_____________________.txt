@@ -1,0 +1,51 @@
+project created By : 
+omar ait ali :
+DAOUD SalahEddine :
+OUBBAHAMMOU Mohamed : 
+
+==============================
+ Mini Project - Setup Guide
+==============================
+
+Project Requirements:
+---------------------
+- PHP version 8.2 or higher
+- Composer
+- Node.js
+- MySQL (Ensure your database configuration is correctly set in the .env file) optional
+
+Setup Instructions:
+-------------------
+
+1. Clone the Repository:
+   git clone <repository-url>
+   cd <project-folder>
+
+2. Install PHP Dependencies:
+   composer install
+
+3. Configure the Environment:
+   - Copy the .env.example file and rename it to .env
+   - Update the .env file with your database credentials and other necessary settings
+
+4. Run Database Migrations:
+   php artisan migrate
+   php artisan storage:link
+
+5. Build Frontend Assets:
+   If Vite is already installed:
+     composer run dev
+
+   If Vite is NOT installed:
+     npm install
+     npm run dev
+
+6. Ensure your MySQL database server is running.
+
+7. Start the Laravel Development Server:
+   php artisan serve
+
+8. Open your browser and navigate to:
+   http://127.0.0.1:8000
+
+Enjoy exploring the mini project
